@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+      <script src="js/jquery-3.3.1.js"></script>
+      <script src="js/scripts.js"></script>
+      <title>Utilitarian Pizza Machine</title>
+    </head>
+    <body>
+      <div class="container"
+        id="pizza-container>
+          <h1>Utilitarian Pizza Machine</h1>
+        </div>
+        <div class="container">
+        <br>
+        <h3>Please Choose what kind of pizza you would like:</h3>
+        <form id="pizza-style" class="card">
+          <div class="form-group">
+            <label for="sauce-type">Pick your sauce</label>
+          <select class="form-control" id="user-sauce">
+            <option value="" disabled selected hidden>Sauce</option>
+            <option value="0.50">Tomato</option>
+            <option value="0.50">Pesto</option>
+            <option value="0.50">Alfredo</option>
+            <option value="0.50">Buffalo</option>
+          </select>    <div class="form-group">
+            <label for="size-type">Pick your size:</label>
+            <select class="form-control" id="user-size">
+              <option value="" disabled selected hidden>Size</option>
+              <option value="8.00">Small</option>
+              <option value="10.00">Medium</option>
+              <option value="15.00">Large</option>
+              <option value="20.00">X-Large</option>
+            </select>
+            <div class="form-group">
+          <label for="toppings">Pick your toppings, please hold down ctr or command button to pick more than one.</label>
+          <select multiple class="form-control" id="user-toppings">
+            <option value="" disabled selected hidden>Toppings</option>
+            <option value="0.50">Sausage</option>
+            <option value="0.50">Canadian Bacon</option>
+            <option value="0.50">Peppers</option>
+            <option value="0.50">Bell Peppers</option>
+            <option value="0.50">Pineapple</option>
+            <option value="0.500">tomatoes</option>
+            <option value="0.50">buffalo chicken<option>
+          </select>
