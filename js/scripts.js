@@ -34,12 +34,11 @@ PizzaTotal.prototype.calculateCost = function() {
 
 
 
-.map(parseFloat)
-
 
 // user logic
 
 $(function() {
+  $("form#pizza-style").submit(function(event) {
   event.preventDefault();
   var whatSauce = parseFloat($("select#user-sauce").val())
   var whatSize = parseFloat($("select#user-size").val())
@@ -49,5 +48,10 @@ $(function() {
   var sauceText = $("select#user-sauce option:selected").text();
   var sizeText = $("select#user-size option:selected").text();
   var toppingText = $("select#user-toppings option:selected").text();
+  var CheeseText = $("select#user-cheeses option:selected").text();
 
+  var newPizzaTotal = new PizzaTotal(whatSize, whatSauce, whatTopping, whatCheese)
+
+
+});
 });
