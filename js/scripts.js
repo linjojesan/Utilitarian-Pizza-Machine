@@ -1,5 +1,20 @@
 
+  // Business logic
 
+// Objects for pizz details adn pizza
+function Pizza(pizzaSize,pizzaSauce,pizzaToppings,pizzaCheeses) {
+    this.pizzaSize = pizzaSize;
+    this.pizzaSauce = pizzaSauce;
+    this.pizzaToppings = pizzaToppings;
+    this.pizzaCheeses = pizzaCheeses;
+  }
+
+  function PizzaTotal(size,sauce,toppings,cheeses) {
+  this.size = size;
+  this.sauce = sauce;
+  this.toppings = toppings;
+  this.cheeses = cheeses;
+}
 
 
 
